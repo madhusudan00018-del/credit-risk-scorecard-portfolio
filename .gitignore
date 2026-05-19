@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS and editor
+.DS_Store
+.idea/
+.vscode/
+
+# Environment files
+.env
+
+# Data outputs
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/model_leaderboard.csv
+!data/processed/risk_band_summary.csv
+!data/processed/stress_test_results.csv
+!data/processed/threshold_cost_curve.csv
+!data/processed/feature_importance.csv
+!data/processed/decile_lift_table.csv
+!data/processed/model_governance_psi.csv
+!data/processed/segment_performance.csv
+data/external/*
+!data/external/.gitkeep
+
+# Model and generated artifacts
+models/*.joblib
+models/*.pkl
+!models/README.md
+!images/README.md
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local database
+*.sqlite
+*.db
