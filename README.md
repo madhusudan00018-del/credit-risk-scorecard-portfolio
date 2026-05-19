@@ -29,6 +29,8 @@ To bridge this gap, I designed a system that covers:
   [Policy Cutoff Simulator] ◄────────────────┴────────► [Macroeconomic Scenario Stress Test]
 ```
 
+![Automated Underwriting System](assets/anakin_cibil_meme.png)
+
 ---
 
 ## Deep Dive into the Modules
@@ -38,12 +40,18 @@ To bridge this gap, I designed a system that covers:
 * **Sigmoid Calibration:** Standard tree classifiers output raw scores that do not reflect true statistical probability. I implemented a Sigmoid calibration layer (`CalibratedClassifierCV`) to map raw outputs into genuine **Probability of Default (PD)** ranges.
 * **Permutation Importance:** Computed validating AUC degradation when features are randomly permuted. This exposes exactly which delinquency or utilization metrics drive the risk decisions.
 
+![Feature Engineering & Calibration](assets/distracted_boyfriend_meme.png)
+
+
 ### 2. SQL Analytics & Monitoring (`sql/` & `src/utils/`)
 * **SQLite Database Mart:** I built an automated workflow to stage raw applicant results, feature flags, and model scores inside a structured SQLite database (`credit_risk.sqlite`).
 * **KPI Cohorts:** The SQL layer features optimized monitoring queries to track:
   * Monthly portfolio risk distributions.
   * Calibration gaps across specific demographic and limit segments.
   * Population Stability Index (PSI) to flag feature drift before it affects model performance.
+
+![Credit Portfolio Drift & Selection Bias](assets/gru_meme.png)
+
 
 ### 3. Policy & Stress Testing Simulator (`dashboard/`)
 * **Business Cost Optimization:** Maximizing ML accuracy is rarely the goal in banking. I programmed a cost function that weights the cost of approving a defaulted borrower (charge-off) against the opportunity cost of declining a creditworthy applicant (loss of interest income).
@@ -114,24 +122,6 @@ pytest
 * **Data & Analytics:** Pandas, NumPy, SQLite, SQL
 * **User Interface:** Streamlit, Plotly Express
 * **Environment & Quality:** VS Code Dev Containers, Pytest, Ruff
-
----
-
-## Credit Risk Humor & Analytics Insights
-
-To demonstrate the real-world operational challenges of credit modeling in an interactive and lighthearted way, here are some classic industry memes representing the core themes of this project:
-
-### 1. Reject Inference & Selection Bias (Gru's Plan)
-This illustrates the selection bias challenge—training a scorecard only on approved candidates means the model never learns how rejected candidates actually default.
-![Reject Inference Meme](assets/gru_meme.png)
-
-### 2. Underwriting Automation vs. Reality (Anakin & Padme)
-A look at the risk officer's concern when implementing fully automated instant credit decisioning.
-![Anakin CIBIL Meme](assets/anakin_cibil_meme.png)
-
-### 3. Feature Selection & Alternate Data (Distracted Boyfriend)
-A funny look at fintech startups chasing social media and unstructured sentiment features rather than relying on monotonic, stable, and highly explainable CIBIL scores.
-![Distracted Boyfriend Meme](assets/distracted_boyfriend_meme.png)
 
 ---
 
