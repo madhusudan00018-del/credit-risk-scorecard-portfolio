@@ -9,7 +9,7 @@ description = "End-to-end credit risk PD modeling, stress testing, SQL analytics
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "MSc Economics Portfolio Project" }]
+authors = [{ name = "Madhusudan Yadav", email = "madhusudan00018@gmail.com" }]
 
 [tool.setuptools.packages.find]
 where = ["src"]

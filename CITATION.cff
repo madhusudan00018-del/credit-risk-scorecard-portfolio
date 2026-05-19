@@ -3,7 +3,8 @@ title: Credit Risk Scorecard and Portfolio Loss Simulation
 message: If you use this portfolio project, please cite the UCI source dataset and this repository.
 type: software
 authors:
-  - name: MSc Economics Portfolio Project
+  - name: Madhusudan Yadav
+    email: madhusudan00018@gmail.com
 year: 2026
 license: MIT
 references:
