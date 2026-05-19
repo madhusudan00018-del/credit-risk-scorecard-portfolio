@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: credit-risk-scorecard-dashboard
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && pip install -e .
+    startCommand: streamlit run app.py --server.address=0.0.0.0 --server.port=$PORT
+    autoDeploy: false
+

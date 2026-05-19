@@ -1,0 +1,58 @@
+project:
+  random_state: 42
+  test_size: 0.20
+  validation_size: 0.20
+
+paths:
+  raw_data: data/raw/UCI_Credit_Card.csv
+  features: data/processed/credit_features.csv
+  model_scores: data/processed/model_scores.csv
+  risk_band_summary: data/processed/risk_band_summary.csv
+  stress_results: data/processed/stress_test_results.csv
+  sqlite_mart: data/processed/credit_risk.sqlite
+  model: models/pd_model.joblib
+  metrics: models/model_metrics.json
+  metadata: models/model_metadata.json
+
+economics:
+  lgd: 0.45
+  annual_margin_rate: 0.18
+  monthly_funding_cost: 0.006
+  false_negative_cost_rate: 0.45
+  false_positive_cost_rate: 0.025
+
+risk_bands:
+  - name: A_low
+    min_pd: 0.00
+    max_pd: 0.05
+  - name: B_watch
+    min_pd: 0.05
+    max_pd: 0.10
+  - name: C_medium
+    min_pd: 0.10
+    max_pd: 0.20
+  - name: D_high
+    min_pd: 0.20
+    max_pd: 0.35
+  - name: E_very_high
+    min_pd: 0.35
+    max_pd: 1.01
+
+stress_scenarios:
+  base:
+    bill_amount_multiplier: 1.00
+    payment_amount_multiplier: 1.00
+    delinquency_shift: 0
+  mild_recession:
+    bill_amount_multiplier: 1.06
+    payment_amount_multiplier: 0.94
+    delinquency_shift: 0
+  adverse:
+    bill_amount_multiplier: 1.12
+    payment_amount_multiplier: 0.88
+    delinquency_shift: 1
+  severe:
+    bill_amount_multiplier: 1.20
+    payment_amount_multiplier: 0.78
+    delinquency_shift: 2
+
