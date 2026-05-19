@@ -129,7 +129,7 @@ pytest
 
 This project was built entirely from scratch to demonstrate production-level credit risk modeling and portfolio engineering.
 
-* **Developer:** Madhusudan Yadav
+* **Author:** Madhusudan Yadav
 * **Email:** madhusudan00018@gmail.com
 * **GitHub:** [madhusudan00018-del](https://github.com/madhusudan00018-del)
-* **LinkedIn:** [Madhusudan Yadav](https://www.linkedin.com/in/madhusudan-yadav-0b1652194/)
+
