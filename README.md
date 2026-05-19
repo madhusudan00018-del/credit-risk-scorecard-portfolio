@@ -117,6 +117,24 @@ pytest
 
 ---
 
+## Credit Risk Humor & Analytics Insights
+
+To demonstrate the real-world operational challenges of credit modeling in an interactive and lighthearted way, here are some classic industry memes representing the core themes of this project:
+
+### 1. Reject Inference & Selection Bias (Gru's Plan)
+This illustrates the selection bias challenge—training a scorecard only on approved candidates means the model never learns how rejected candidates actually default.
+![Reject Inference Meme](assets/gru_meme.png)
+
+### 2. Underwriting Automation vs. Reality (Anakin & Padme)
+A look at the risk officer's concern when implementing fully automated instant credit decisioning.
+![Anakin CIBIL Meme](assets/anakin_cibil_meme.png)
+
+### 3. Feature Selection & Alternate Data (Distracted Boyfriend)
+A funny look at fintech startups chasing social media and unstructured sentiment features rather than relying on monotonic, stable, and highly explainable CIBIL scores.
+![Distracted Boyfriend Meme](assets/distracted_boyfriend_meme.png)
+
+---
+
 ## Author & Contact
 
 This project was built entirely from scratch to demonstrate production-level credit risk modeling and portfolio engineering.
