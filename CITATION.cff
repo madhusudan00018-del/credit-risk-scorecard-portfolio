@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: Credit Risk Scorecard and Portfolio Loss Simulation
+message: If you use this portfolio project, please cite the UCI source dataset and this repository.
+type: software
+authors:
+  - name: MSc Economics Portfolio Project
+year: 2026
+license: MIT
+references:
+  - type: dataset
+    title: Default of Credit Card Clients
+    authors:
+      - name: I-Cheng Yeh
+    year: 2009
+    doi: 10.24432/C55S3H
+    url: https://archive.ics.uci.edu/dataset/350/defaultofcreditcardclients
+

@@ -1,0 +1,10 @@
+model_name,run_name,roc_auc,average_precision,brier_score
+hist_gradient_boosting,"hist_gradient_boosting:model__learning_rate=0.05,model__max_leaf_nodes=31",0.7868028764708548,0.5601337522524108,0.1337319584495126
+random_forest,"random_forest:model__max_depth=10,model__min_samples_leaf=40",0.7850341497460681,0.5558254090857631,0.17266409531840313
+hist_gradient_boosting,"hist_gradient_boosting:model__learning_rate=0.08,model__max_leaf_nodes=31",0.7846770340155756,0.5532636186517013,0.1338523894383211
+hist_gradient_boosting,"hist_gradient_boosting:model__learning_rate=0.03,model__max_leaf_nodes=15",0.7831652790300256,0.5583477580198347,0.13402328548245848
+random_forest,"random_forest:model__max_depth=8,model__min_samples_leaf=60",0.7828596866573533,0.5559558479680171,0.1770215097604562
+random_forest,"random_forest:model__max_depth=6,model__min_samples_leaf=80",0.7794751100253489,0.5531898512209473,0.18075833988764603
+logistic_scorecard,"logistic_scorecard:model__C=1.5,model__penalty=l2",0.7736636945456681,0.5253965220272092,0.1836512143106701
+logistic_scorecard,"logistic_scorecard:model__C=0.75,model__penalty=l2",0.7736519223856653,0.5254517511155166,0.18365662690383017
+logistic_scorecard,"logistic_scorecard:model__C=0.25,model__penalty=l2",0.7736454718870337,0.5261079420769519,0.18365710484793937

@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-05-17T18:32:11.108515+00:00",
+  "dataset": "UCI Default of Credit Card Clients",
+  "source_url": "https://archive.ics.uci.edu/dataset/350/defaultofcreditcardclients",
+  "rows": 30000,
+  "target_rate": 0.2212,
+  "feature_count": 59,
+  "selected_model": "hist_gradient_boosting:model__learning_rate=0.05,model__max_leaf_nodes=31",
+  "threshold": 0.09443478260869564
+}
