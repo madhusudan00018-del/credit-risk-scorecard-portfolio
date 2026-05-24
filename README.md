@@ -1,6 +1,6 @@
 # Credit Risk Scorecard & Portfolio Analytics Platform
 
-I developed this platform to simulate the quantitative risk infrastructure of a retail bank. The project implements an end-to-end Probability of Default (PD) scorecard, a financial policy simulator, macroeconomic stress testing modules, and SQL-based monitoring pipelines—all consolidated into an interactive dashboard.
+I developed this platform to simulate the quantitative risk infrastructure of a retail bank. The project implements an end-to-end Probability of Default (PD) scorecard, a financial policy simulator, macroeconomic stress testing modules, and SQL-based monitoring pipelines,all consolidated into an interactive dashboard.
 
 **Live App Demo:** [Credit Risk Command Center on Streamlit Cloud](https://credit-risk-scorecard-portfolio-zunilcwekhsefzybspcwts.streamlit.app/)
 
